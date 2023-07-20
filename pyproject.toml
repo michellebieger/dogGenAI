@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "doggen"
+version = "0.1.0"
+description = "Creating a generative AI model from twinlab to detect images of dogs"
+authors = ["michellebieger <michellebieger@live.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+[tool.poetry.group.dev.dependencies]
+numpy = "^1.25.1"
+matplotlib = "^3.7.2"
+pandas = "^2.0.3"
+twinlab = { path = "../twinlab-client", develop = true }
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
