@@ -6,13 +6,12 @@ authors = ["michellebieger <michellebieger@live.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "^3.11"
-
-[tool.poetry.group.dev.dependencies]
+python = ">=3.9,<3.11"
 numpy = "^1.25.1"
 matplotlib = "^3.7.2"
-pandas = "^2.0.3"
-twinlab = { path = "../twinlab-client", develop = true }
+pandas = "1.5.3"
+twinlab = { path = "../twinlab", develop = true }
+
 
 [build-system]
 requires = ["poetry-core"]
