@@ -1,8 +1,12 @@
 [tool.poetry]
-name = "doggen"
+authors = [
+    "Michelle Bieger <michellebieger@live.com>",
+    "Tim Jillians <tim.jillians@outlook.com>",
+    "Alexander Mead <alexander@digilab.co.uk>",
+]
+name = "dogGenAI"
 version = "0.1.0"
-description = "Creating a generative AI model from twinlab to detect images of dogs"
-authors = ["michellebieger <michellebieger@live.com>"]
+description = "Creating a generative AI model from twinLab to generate images"
 readme = "README.md"
 
 [tool.poetry.dependencies]
@@ -10,8 +14,7 @@ python = ">=3.9,<3.11"
 numpy = "^1.25.1"
 matplotlib = "^3.7.2"
 pandas = "1.5.3"
-twinlab = { path = "../twinlab", develop = true }
-
+twinlab = { path = "../twinlab-library", develop = true }
 
 [build-system]
 requires = ["poetry-core"]
